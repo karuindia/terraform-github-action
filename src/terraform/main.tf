@@ -6,6 +6,7 @@ terraform {
     }
   }
 }
+
 backend "azurerm" {
     resource_group_name  = "terrformstorage"
     storage_account_name = "terraformstate"
