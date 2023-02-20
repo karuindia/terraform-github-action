@@ -11,7 +11,7 @@ backend "azurerm" {
     storage_account_name = "terraformstate"
     container_name       = "terraform"
     #subscription_id      = "f16b4daf-8ce3-47ba-9a7b-55c4825807b7"
-    key                  = "demo.terraform.tfstate"
+    key                  = "test.terraform.tfstate"
   }
 
 
@@ -28,6 +28,6 @@ provider "azurerm" {
 
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
-  name     = "example-resource"
+  name     = "karu-rg"
   location = "West Europe"
 }
